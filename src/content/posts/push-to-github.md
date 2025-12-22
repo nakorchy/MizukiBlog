@@ -18,6 +18,7 @@ lang: ''
 ```markdown
 # 替换为GitHub用户名
 git config --global user.name "用户名"
+
 # 替换为GitHub注册邮箱
 git config --global user.email "邮箱地址"
 ```
