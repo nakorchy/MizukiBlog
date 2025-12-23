@@ -21,8 +21,8 @@ const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UTC+8
 export const siteConfig: SiteConfig = {
 	title: "Nakorchy",
-	subtitle: "One demo website",
-	siteURL: "https://nakorchy.top/", // 请替换为你的站点URL，以斜杠结尾
+	subtitle: "One website",
+	siteURL: "https://blog.nakorchy.top/", // 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2025-11-29", // 站点开始运行日期，用于站点统计组件计算运行天数
 
 	timeZone: SITE_TIMEZONE,
@@ -182,26 +182,26 @@ export const siteConfig: SiteConfig = {
 	],
 
 	// 字体配置
-	// font: {
-	// 	// 注意：自定义字体需要在 src/styles/main.css 中引入字体文件
-	// 	// 注意：字体子集优化功能目前仅支持 TTF 格式字体,开启后需要在生产环境才能看到效果,在Dev环境下显示的是浏览器默认字体!
-	// 	asciiFont: {
-	// 		// 英文字体 - 优先级最高
-	// 		// 指定为英文字体则无论字体包含多大范围，都只会保留 ASCII 字符子集
-	// 		fontFamily: "ZenMaruGothic-Medium",
-	// 		fontWeight: "400",
-	// 		localFonts: ["ZenMaruGothic-Medium.ttf"],
-	// 		enableCompress: true, // 启用字体子集优化，减少字体文件大小
-	// 	},
-	// 	cjkFont: {
-	// 		// 中日韩字体 - 作为回退字体
-	// 		fontFamily: "萝莉体 第二版",
-	// 		fontWeight: "500",
-	// 		localFonts: ["萝莉体 第二版.ttf"],
-	// 		enableCompress: true, // 启用字体子集优化，减少字体文件大小
-	// 	},
-	// },
-	// showLastModified: true, // 控制“上次编辑”卡片显示的开关
+	font: {
+		// 注意：自定义字体需要在 src/styles/main.css 中引入字体文件
+		// 注意：字体子集优化功能目前仅支持 TTF 格式字体,开启后需要在生产环境才能看到效果,在Dev环境下显示的是浏览器默认字体!
+		asciiFont: {
+			// 英文字体 - 优先级最高
+			// 指定为英文字体则无论字体包含多大范围，都只会保留 ASCII 字符子集
+			fontFamily: "ZenMaruGothic-Medium",
+			fontWeight: "400",
+			localFonts: ["ZenMaruGothic-Medium.ttf"],
+			enableCompress: true, // 启用字体子集优化，减少字体文件大小
+		},
+		cjkFont: {
+			// 中日韩字体 - 作为回退字体
+			fontFamily: "萝莉体 第二版",
+			fontWeight: "500",
+			localFonts: ["萝莉体 第二版.ttf"],
+			enableCompress: true, // 启用字体子集优化，减少字体文件大小
+		},
+	},
+	showLastModified: true, // 控制“上次编辑”卡片显示的开关
 };
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	src: {
@@ -395,7 +395,7 @@ export const commentConfig: CommentConfig = {
 
 export const announcementConfig: AnnouncementConfig = {
 	title: "Announcement", // 公告标题
-	content: "2025年11月29日，本网站初步建立。", // 公告内容
+	content: "2025年12月23日，发布第一篇文章。", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: false, // 启用链接
@@ -406,7 +406,7 @@ export const announcementConfig: AnnouncementConfig = {
 };
 
 export const musicPlayerConfig: MusicPlayerConfig = {
-	enable: true, // 启用音乐播放器功能
+	enable: false, // 启用音乐播放器功能
 	mode: "meting", // 音乐播放器模式，可选 "local" 或 "meting"
 	meting_api:
 		"https://www.bilibili.uno/api?server=:server&type=:type&id=:id&auth=:auth&r=:r", // Meting API 地址
